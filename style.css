@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, verdana;
+}
+
+body {
+  background-color: #eceaea;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.logo {
+  width: 80%;
+  max-width: 1024px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo p {
+  color: #5d15d1;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#area-formulario {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-image: url("./imagens/bahia.jpg");
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+}
+
+#area-formulario .titulo-form {
+  background-color: #5d15d1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.titulo-form img {
+  width: 20px;
+  height: 20px;
+  rotate: -45deg;
+}
+
+.form {
+  padding: 30px 25px 20px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.form form {
+  font-size: 16px;
+}
+
+.form form .dados {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form input,
+.form form select {
+  height: 32px;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+.dados-viagem,
+.dados-destino {
+  display: flex;
+  gap: 10px;
+}
+
+.form form .divisao-dados {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dados-quarto .divisao-infantil,
+.divisao,
+.preferencia-hospedagem .divisao-hospedagem {
+  display: flex;
+  align-items: center;
+}
+
+.divisao {
+  margin-right: 30px;
+  gap: 3px;
+}
+
+.form form button {
+  height: 32px;
+  width: 160px;
+  background-color: #5d15d1;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+#area-ofertas,
+#area-anuncios {
+  width: 100%;
+  height: auto;
+  margin: 32px auto 0 auto;
+}
+
+.ofertas,
+.anuncios {
+  width: 90%;
+  max-width: 1024px;
+
+  margin: 0 auto;
+}
+
+.ofertas h2,
+.anuncios h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descricao-area {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.destaque {
+  font-weight: bold;
+}
+
+.galeria-ofertas {
+  width: 100%;
+  height: 375px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 15px;
+}
+
+.card-destaque {
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.grupo-ofertas {
+  width: calc(50% - 10px);
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.grupo-ofertas .card-oferta,
+.card-anuncio {
+  width: calc(50% - 10px);
+}
+
+.card-anuncio {
+  height: 100%;
+}
+
+.card-oferta img,
+.card-anuncio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-oferta {
+  position: relative;
+}
+
+.card-oferta p {
+  background-color: rgba(0, 0, 0, 50%);
+  color: #fff;
+  font-size: 17px;
+  padding: 5px 10px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.galeria-anuncios {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  gap: 10px;
+}
+
+.descricao-anuncio {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.descricao-anuncio h3 {
+  font-size: 16px;
+}
+
+.descricao-anuncio p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #5d15d1;
+  color: #fff;
+  margin-top: 32px;
+}
+
+.rodape {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape img {
+  width: 18px;
+  height: 18px;
+}
+
+.rodape h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.rodape span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.contatos,
+.redes-sociais {
+  margin: 15px 0;
+}
+
+.tipo-contato,
+.tipo-redes {
+  margin: 5px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .form form button {
+    width: 100%;
+  }
+
+  .galeria-ofertas,
+  .grupo-ofertas {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .card-destaque,
+  .grupo-ofertas .card-oferta {
+    width: 100%;
+    height: 225px;
+  }
+  .galeria-anuncios {
+    flex-direction: column;
+  }
+  .card-anuncio {
+    width: 100%;
+  }
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contatos,
+  .redes-sociais {
+    width: 250px;
+  }
+}
+
+@media (max-width: 540px) {
+  .dados-viagem,
+  .dados-destino {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .dados-quarto .divisao-infantil,
+  .preferencia-hospedagem .divisao-hospedagem {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
