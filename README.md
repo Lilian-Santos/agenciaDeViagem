@@ -106,6 +106,10 @@ O projeto utiliza dois principais pontos de quebra:
 - 🏝️ Cards empilhados verticalmente
 - 📦 Rodapé reorganizado em coluna
 
+### 🏠 Página Responsiva: Até 768px
+
+![Página Responsiva: Até 768px](./layout/layout-768px.png)
+
 ---
 
 ### 📱 Até 540px
@@ -115,6 +119,10 @@ O projeto utiliza dois principais pontos de quebra:
 - ☑️ Radio buttons e checkboxes organizados verticalmente
 
 Esses ajustes garantem melhor leitura e usabilidade em dispositivos móveis.
+
+### 🏠 Página Responsiva: Até 540px
+
+![Página Responsiva: Até 768px](./layout/layout-540px.png)
 
 ---
 
